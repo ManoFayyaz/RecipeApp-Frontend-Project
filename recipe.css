@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+header{
+    background-color: rgb(92, 17, 42);
+    height: 100px;
+
+}
+
+nav{
+    display: flex;
+    gap: 800px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    border: 1px solid white;
+    border-radius: 30px;
+    height: 30px;
+    width: 180px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+}
+
+button{
+    border: 1px solid rgb(164, 23, 114);
+    border-radius: 30px;
+    height: 40px;
+    width: 100px;
+    padding: 5px;
+    margin-top: 2px;
+    background-color: rgb(121, 21, 96);
+    color: rgb(255, 255, 255);
+}
+
+button:hover{
+    background-color: rgb(218, 25, 179);
+    transform: scale(0.9);
+}
+
+.container{
+    text-align: center;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 30px;
+}
+
+.recipe-container{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(37, 27, 40);
+    border: 1px solid black;
+    color: white;
+    z-index: 1;
+
+ 
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe{
+    width: 300px;
+    height: 300px;
+  
+   
+}
+.recipe img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.recipe img:hover{
+
+    transform: scale(1.1);
+    transition: all ease-in-out 3s;
+}
+
+.recipeDt{
+    display: none;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    background-color: rgb(58, 54, 54);
+    color: white;
+    height: 400px;
+    width: 500px;
+    border-radius: 0px;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: 10px;
+    scrollbar-color: rgb(135, 129, 129);
+    scroll-behavior: smooth;
+    
+}
+
+  
+
+.recipeClose{
+    margin-left:88%;
+    margin-top: 0;
+    border-radius: 0;
+    width: 60px;
+}
+
+.recipeContent h2{
+    text-align: center;
+    color: rgb(225, 71, 215);
+
+}
+.recipeContent h3{
+   margin-top: 10px;
+   margin-bottom: 3px;
+   color: rgb(214, 53, 203);
+
+}
+
+.recipeContent{
+    padding: 10px;
+}
+
+.recipeContent p{
+    line-height: 30px;
+}
+
+.recipeContent li{
+    line-height: 30px;
+}
