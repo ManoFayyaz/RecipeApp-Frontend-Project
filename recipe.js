@@ -6,7 +6,7 @@ let recipeDt=document.querySelector(".recipeDt");
 let recipeClose=document.querySelector(".recipeClose");
 
 
-const url=`https://www.themealdb.com/api/json/v1/1/search.php?s=${recipe}`;
+// const url=`https://www.themealdb.com/api/json/v1/1/search.php?s=${recipe}`;
 
 async function fetchRecipe(name){
 
